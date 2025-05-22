@@ -25,11 +25,6 @@ export default function Home() {
           >
             Iterator
           </Link>
-          {/* . I like to build things that are useful and fun. I am interested in
-          web development, design systems, and user experience. I am also
-          passionate about open source and contributing to the community. I have
-          been a solo contributor for the last <b>3</b> years and have guided
-          some developers in there in journey. */}
         </p>
         <p className="mt-4 text-gray-1100 text-[#b5b3ad]">
           Working with a small team for last <b>3</b> years, I have been a part
