@@ -1,103 +1,105 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="mx-auto max-w-[692px] overflow-x-hidden px-6 py-12  antialiased sm:py-32 md:overflow-x-visible md:py-16">
+      <header className="mb-32 flex flex-col items-start">
+        <Link
+          className="text-medium inline-block font-medium no-underline mb-1 "
+          href="/"
+        >
+          Chidananda K M
+        </Link>
+        <span className="text-medium font-medium leading-none text-[#b5b3ad]">
+          Full Stack Developer
+        </span>
+      </header>
+      <main>
+        <span className="mb-5 block font-medium sm:mb-6">Today</span>
+        <p className="text-gray-1100 text-[#b5b3ad]">
+          I work as a Full Stack Developer at{" "}
+          <Link
+            href="https://www.linkedin.com/company/iteratorindia/"
+            className="underline underline-offset-4 decoration-2 decoration-gray-200 transition-all hover:decoration-gray-900"
+            target="_blank"
+          >
+            Iterator
+          </Link>
+          {/* . I like to build things that are useful and fun. I am interested in
+          web development, design systems, and user experience. I am also
+          passionate about open source and contributing to the community. I have
+          been a solo contributor for the last <b>3</b> years and have guided
+          some developers in there in journey. */}
+        </p>
+        <p className="mt-4 text-gray-1100 text-[#b5b3ad]">
+          Working with a small team for last <b>3</b> years, I have been a part
+          of various projects and have contributed to their success.
+        </p>
+        <div className="-mb-3 mt-16 sm:mt-32">
+          <span className="mb-5 block font-medium sm:mb-4">Projects</span>
+          <div className="flex flex-col gap-7 sm:gap-4">
+            <a
+              href="https://animations.dev/"
+              target="_blank"
+              className="-mx-3 flex flex-col rounded-md px-3 no-underline hover:bg-[#191918] sm:py-3"
+            >
+              <span>Animations on the Web</span>
+              <span className="text-gray-1100">
+                A course on web animations.
+              </span>
+            </a>
+            <a
+              href="https://sonner.emilkowal.ski/"
+              target="_blank"
+              className="-mx-3 flex flex-col rounded-md px-3 no-underline hover:bg-[#F5F4F4] dark:hover:bg-gray-200 sm:py-3"
+            >
+              <span>Sonner</span>
+              <span className="text-gray-1100">
+                An opinionated toast component for React.
+              </span>
+            </a>
+            <a
+              href="https://vaul.emilkowal.ski/"
+              target="_blank"
+              className="-mx-3 flex flex-col rounded-md px-3 no-underline hover:bg-[#F5F4F4] dark:hover:bg-gray-200 sm:py-3"
+            >
+              <span>Vaul</span>
+              <span className="text-gray-1100">
+                A drawer component for React.
+              </span>
+            </a>
+          </div>
+        </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* <div className="mt-16 pb-1 sm:mt-32">
+                    <span className="mb-5 block font-medium sm:mb-6">Newsletter</span>
+                    <span className="block text-gray-1100">Exclusive, newsletter-only content once a month. No spam, no nonsense.</span>
+                    <form className="mt-6 flex h-10 items-center  justify-between gap-2 overflow-hidden rounded-md bg-gray-100 bg-white shadow-border focus-within:border-gray-800 focus-within:outline-none focus-within:ring-2 focus-within:ring-black/20 focus-within:ring-offset-0 dark:bg-[#0B0B09] dark:focus-within:ring-white/20 border-gray-200 focus-within:border-gray-400 focus-within:ring-black/20 dark:focus-within:ring-white/20">
+                        <label for="email" className="sr-only">Email</label>
+                        <input id="email" className="h-full w-[40%] grow border-none bg-transparent px-3.5 transition-colors placeholder:text-gray-900 focus:outline-none" required="" placeholder="Enter your email" value=""/>
+                        <button type="submit" className="hover:bg-gray-1200/90 mr-1 h-[30px] w-[80px] rounded-[4px] bg-gray-1200 px-1.5 text-sm font-medium text-gray-100 outline-none focus:shadow-focus-ring md:w-[104px] md:px-3.5">
+                            <span className="block" style="opacity:1;transform:none">Subscribe</span>
+                        </button>
+                    </form>
+                </div> */}
+        <div className="mt-16 sm:mt-32">
+          <span className="mb-5 block font-medium sm:mb-6">More</span>
+          <span className="text-gray-1100">
+            You can see more of my work on
+            {/* <!-- --> */}
+            <a href="https://twitter.com/emilkowalski_" target="_blank">
+              Twitter
+            </a>
+            {/* <!-- --> */}
+            and more of my code on
+            {/* <!-- --> */}
+            <a href="https://github.com/emilkowalski" target="_blank">
+              GitHub
+            </a>
+            .
+          </span>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
