@@ -16,20 +16,40 @@ export default function Home() {
       </header>
       <main>
         <span className="mb-5 block font-medium sm:mb-6">Today</span>
-        <p className="text-gray-1100 text-[#b5b3ad]">
-          I work as a Full Stack Developer at{" "}
+        <p className="text-gray-1100 font-bold text-[#b5b3ad]">
+          Fullstack Developer —{" "}
           <Link
-            href="https://www.linkedin.com/company/iteratorindia/"
-            className="underline underline-offset-4 decoration-2 decoration-gray-200 transition-all hover:decoration-gray-900"
+            href="https://iterator.in"
+            className="underline font-bold underline-offset-3 decoration-2 decoration-gray-200 transition-all hover:decoration-gray-900"
             target="_blank"
           >
             Iterator
           </Link>
         </p>
-        <p className="mt-4 text-gray-1100 text-[#b5b3ad]">
-          Working with a small team for last <b>3</b> years, I have been a part
-          of various projects and have contributed to their success.
-        </p>
+        <div className="mt-4 text-gray-1100 text-[#b5b3ad]">
+          <ul className="list-disc pl-5">
+            <li>
+              Contributed to building and scaling B2B SaaS products in a
+              fast-paced startup environment
+            </li>
+            <li>
+              Worked closely with clients to gather feedback and translate it
+              into product improvements
+            </li>
+            <li>
+              Collaborated with backend teams to define requirements and ensure
+              seamless integrations
+            </li>
+            <li>
+              Took ownership of end-to-end development, deployment, and ongoing
+              maintenance
+            </li>
+            <li>
+              Focused on delivering high-quality, user-centric frontend
+              experiences while supporting backend needs
+            </li>
+          </ul>
+        </div>
         <div className="-mb-3 mt-16 sm:mt-32">
           <span className="mb-5 block font-medium sm:mb-4">Projects</span>
           <div className="flex flex-col gap-7 sm:gap-4">

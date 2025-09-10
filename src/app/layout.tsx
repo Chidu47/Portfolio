@@ -19,7 +19,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Chidananda K M",
-  description: "",
+  description:
+    "Fullstack developer with 3.7 years of startup experience, contributing to B2B SaaS products in fast-paced environments—skilled in frontend development, client collaboration, and end-to-end product ownership.",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
