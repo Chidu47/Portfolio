@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Projects from "./components/projects";
 
 export default function Home() {
   return (
@@ -51,14 +52,15 @@ export default function Home() {
           </ul>
         </div>
         <div className="-mb-3 mt-16 sm:mt-32">
-          <span className="mb-5 block font-medium sm:mb-4">Projects</span>
+          <Projects />
+          {/* <span className="mb-5 block font-medium sm:mb-4">Projects</span>
           <div className="flex flex-col gap-7 sm:gap-4">
             <a
-              href="https://animations.dev/"
+              href="https://karbonwise.com/"
               target="_blank"
               className="-mx-3 flex flex-col rounded-md px-3 no-underline hover:bg-[#191918] sm:py-3"
             >
-              <span>Animations on the Web</span>
+              <span>Karbonwise</span>
               <span className="text-gray-1100">
                 A course on web animations.
               </span>
@@ -83,7 +85,7 @@ export default function Home() {
                 A drawer component for React.
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* <div className="mt-16 pb-1 sm:mt-32">
@@ -106,8 +108,7 @@ export default function Home() {
               Twitter
             </a>
             {/* <!-- --> */}
-            and more of my code on
-            {/* <!-- --> */}
+            and more of my code on {/* <!-- --> */}
             <a href="https://github.com/emilkowalski" target="_blank">
               GitHub
             </a>
