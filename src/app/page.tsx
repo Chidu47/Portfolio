@@ -2,6 +2,7 @@ import Link from "next/link";
 import Projects from "./components/projects";
 
 export default function Home() {
+  //test
   return (
     <div className="mx-auto max-w-[692px] overflow-x-hidden px-6 py-12  antialiased sm:py-32 md:overflow-x-visible md:py-16">
       <header className="mb-32 flex flex-col items-start">
