@@ -100,22 +100,20 @@ export default function Home() {
                         </button>
                     </form>
                 </div> */}
-        <div className="mt-16 sm:mt-32">
+        {/* <div className="mt-16 sm:mt-32">
           <span className="mb-5 block font-medium sm:mb-6">More</span>
           <span className="text-gray-1100">
             You can see more of my work on
-            {/* <!-- --> */}
             <a href="https://twitter.com/emilkowalski_" target="_blank">
               Twitter
             </a>
-            {/* <!-- --> */}
-            and more of my code on {/* <!-- --> */}
+            and more of my code on
             <a href="https://github.com/emilkowalski" target="_blank">
               GitHub
             </a>
             .
           </span>
-        </div>
+        </div> */}
       </main>
     </div>
   );
